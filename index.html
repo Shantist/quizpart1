@@ -1,0 +1,70 @@
+<!--- First quiz ito -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game TO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Quiz Game</h2>
+
+        <button id="start-button">Start Quiz Time</button>
+        <div id="questions-container" style="display: none;">
+            <!-- Question 1: Multiple Choice -->
+            <div class="question">
+                <p><strong>Question 1.1:</strong> Convert this Binary (11001010101.011101) to Octal?</p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q1" value="mali"> 12038.96
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="mali"> 12830.27
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="tama"> 3125.35 <!-- ito tama-->
+                    </label>
+                </div>
+            </div>
+             <!-- Question 2: Fill in the Blank -->
+             <div class="question">
+                <p><strong>Question 2.1:</strong> It refers to the structure or format of the data 
+                within the message, which includes the sequence 
+                in which the data is sent</p>
+                <input type="text" id="q2-answer" placeholder="Type your answer here">
+            </div>
+
+            <!-- Question 3: True or False -->
+            <div class="question">
+                <p><strong>Question 3:</strong> True or False: Intentional Standards Organ is the international organizations for standardization and are responsible to create set of rules and standards for graphics and 
+                document exchange and provides models for equipment and system compatibility, quality enhancement, improved productivity and reduced cost.</p><!--false-->
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q3" value="true"> True
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="false"> False
+                    </label>
+                </div>
+            </div>
+
+            <button id="submit-button">Submit</button>
+        </div>
+        
+        <div id="result-container" style="display: none;">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <a href="https://www.livechart.me/fall-2023/tv"><button type="button">Proceed to next</button></a>
+                
+
+        </div>
+    </div>
+
+    <script src="jaba.js"></script>
+</body>
+</html>
